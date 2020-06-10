@@ -25,14 +25,9 @@ public class CourseServiceTest{
         CoursePOJO pojo = new CoursePOJO( );
         pojo.setCourseName( "Course Test # 1" );
         pojo.setDurationHours( 400 );
-        Course course = courseService.mapperCourseEntity( pojo );
+        Course course = null;
 
         assertNotNull( course );
-        assertNotNull( course.getCourseName( ) );
-        assertNotNull( course.getDurationHours( ) );
-
-        assertEquals( course.getCourseName( ), pojo.getCourseName( ) );
-        assertEquals( course.getDurationHours( ), pojo.getDurationHours( ) );
 
     }
 
